@@ -1,19 +1,8 @@
 [gd_scene format=4 uid="uid://c48ik0ifu3nwp"]
 
-[ext_resource type="Texture2D" uid="uid://bjdcqegxeqg35" path="res://assets/textures/cassette_body.png" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://uockr37gn721" path="res://scripts/cassette.gd" id="1_tefeu"]
-[ext_resource type="Texture2D" uid="uid://cvn5itnxqdk1h" path="res://assets/textures/cassette_button_a.png" id="2_0wfyh"]
-[ext_resource type="Texture2D" uid="uid://lnpyykmggr2t" path="res://assets/textures/cassette_button.png" id="2_sugp2"]
-[ext_resource type="Texture2D" uid="uid://cvkdyt6ir7s6o" path="res://assets/textures/icon_volume_down.png" id="4_ya4ey"]
-[ext_resource type="Texture2D" uid="uid://i1sei1m6bv1u" path="res://assets/textures/icon_pause_play.png" id="6_eb6dy"]
-[ext_resource type="Texture2D" uid="uid://d1wbkqfxue6la" path="res://assets/textures/icon_prev_button.png" id="7_a8y0u"]
 [ext_resource type="FontFile" uid="uid://derhyf3vikype" path="res://assets/FONTS/led_font.ttf" id="7_o6xl0"]
-[ext_resource type="Texture2D" uid="uid://c32ybtdtt0xoo" path="res://assets/textures/icon_repeat.png" id="7_trceg"]
-[ext_resource type="Texture2D" uid="uid://b0jtf2nx8lg1w" path="res://assets/textures/icon_next_button.png" id="8_jkv2x"]
 [ext_resource type="Texture2D" uid="uid://biapuky4s1vx3" path="res://assets/textures/title.png" id="8_tipki"]
-[ext_resource type="Texture2D" uid="uid://cpuwt8lvq8ijo" path="res://assets/cover/cassette_cover.png" id="10_jkv2x"]
-[ext_resource type="Texture2D" uid="uid://byf3alijcmb5c" path="res://assets/textures/icon_volume_up.png" id="10_ya4ey"]
-[ext_resource type="Texture2D" uid="uid://u6jplfwyg61p" path="res://assets/cover/cassette_ring.png" id="11_jkv2x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbgi4"]
 size = Vector2(75, 75)
@@ -22,7 +11,7 @@ size = Vector2(75, 75)
 size = Vector2(100, 100)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o6xl0"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6
@@ -57,13 +46,11 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_tbgi4")
 
 [node name="CassetteVolUp" type="Sprite2D" parent="Resize/Cassette/CassetteVolUp" unique_id=1337862487]
-texture = ExtResource("2_0wfyh")
 
 [node name="IconVolumeUp" type="Sprite2D" parent="Resize/Cassette/CassetteVolUp/CassetteVolUp" unique_id=238499302]
 position = Vector2(-22.5, 0)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("10_ya4ey")
 
 [node name="CassetteVolDown" type="Area2D" parent="Resize/Cassette" unique_id=1420393934]
 position = Vector2(-201, 29.99997)
@@ -74,13 +61,11 @@ shape = SubResource("RectangleShape2D_tbgi4")
 
 [node name="CassetteVolDown" type="Sprite2D" parent="Resize/Cassette/CassetteVolDown" unique_id=1512765387]
 position = Vector2(0, 3.0517578e-05)
-texture = ExtResource("2_0wfyh")
 
 [node name="IconVolumeDown" type="Sprite2D" parent="Resize/Cassette/CassetteVolDown/CassetteVolDown" unique_id=55048612]
 position = Vector2(-22.5, 0)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_ya4ey")
 
 [node name="CassetteBttnA" type="Area2D" parent="Resize/Cassette" unique_id=1458443045]
 position = Vector2(-146, -121)
@@ -90,13 +75,11 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CassetteBttnA" type="Sprite2D" parent="Resize/Cassette/CassetteBttnA" unique_id=1231500264]
-texture = ExtResource("2_sugp2")
 
 [node name="IconPausePlay" type="Sprite2D" parent="Resize/Cassette/CassetteBttnA/CassetteBttnA" unique_id=743757251]
 position = Vector2(0, -32.5)
 rotation = 1.5707964
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("6_eb6dy")
 
 [node name="CassetteBttnB" type="Area2D" parent="Resize/Cassette" unique_id=414533326]
 position = Vector2(-76, -121)
@@ -106,13 +89,11 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CassetteBttnB" type="Sprite2D" parent="Resize/Cassette/CassetteBttnB" unique_id=809240799]
-texture = ExtResource("2_sugp2")
 
-[node name="IconPausePlay" type="Sprite2D" parent="Resize/Cassette/CassetteBttnB/CassetteBttnB" unique_id=587581854]
+[node name="IconPrev" type="Sprite2D" parent="Resize/Cassette/CassetteBttnB/CassetteBttnB" unique_id=587581854]
 position = Vector2(0, -32.5)
 rotation = -1.5707964
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("7_a8y0u")
 
 [node name="CassetteBttnC" type="Area2D" parent="Resize/Cassette" unique_id=1269858929]
 position = Vector2(-6, -121)
@@ -122,13 +103,11 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CassetteBttnC" type="Sprite2D" parent="Resize/Cassette/CassetteBttnC" unique_id=2075025886]
-texture = ExtResource("2_sugp2")
 
 [node name="IconNext" type="Sprite2D" parent="Resize/Cassette/CassetteBttnC/CassetteBttnC" unique_id=1440050989]
 position = Vector2(0, -32.5)
 rotation = -1.5707964
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("8_jkv2x")
 
 [node name="CassetteBttnD" type="Area2D" parent="Resize/Cassette" unique_id=487467464]
 position = Vector2(63.999985, -121)
@@ -138,35 +117,37 @@ scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_tefeu")
 
 [node name="CassetteBttnD" type="Sprite2D" parent="Resize/Cassette/CassetteBttnD" unique_id=1819295391]
-texture = ExtResource("2_sugp2")
 
 [node name="IconLoop" type="Sprite2D" parent="Resize/Cassette/CassetteBttnD/CassetteBttnD" unique_id=180732207]
 position = Vector2(0, -32.5)
 rotation = 1.5707964
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("7_trceg")
 
-[node name="CassetteTape" type="Sprite2D" parent="Resize/Cassette" unique_id=1733348802]
+[node name="CassetteTape_0" type="Sprite2D" parent="Resize/Cassette" unique_id=1733348802]
 position = Vector2(45, 40)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("10_jkv2x")
+
+[node name="CassetteTape_1" type="Sprite2D" parent="Resize/Cassette" unique_id=932597851]
+position = Vector2(45, 40)
+scale = Vector2(0.5, 0.5)
+
+[node name="CassetteTape_2" type="Sprite2D" parent="Resize/Cassette" unique_id=25012440]
+position = Vector2(45, 40)
+scale = Vector2(0.5, 0.5)
 
 [node name="CassetteRingA" type="Sprite2D" parent="Resize/Cassette" unique_id=1535164913]
 position = Vector2(-10, 30)
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("11_jkv2x")
 
 [node name="CassetteRingB" type="Sprite2D" parent="Resize/Cassette" unique_id=144867356]
 position = Vector2(100, 30)
 rotation = -6.2831855
 scale = Vector2(0.4, 0.4)
-texture = ExtResource("11_jkv2x")
 
 [node name="CassetteBody" type="Sprite2D" parent="Resize/Cassette" unique_id=1385371549]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_o5qli")
 
-[node name="Title" type="Sprite2D" parent="Resize/Cassette" unique_id=838384786]
+[node name="LOGO" type="Sprite2D" parent="Resize/Cassette" unique_id=838384786]
 position = Vector2(130, -85)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("8_tipki")
@@ -177,19 +158,23 @@ offset_top = 256.0
 offset_right = 256.0
 offset_bottom = 768.0
 rotation = -1.5707964
+mouse_filter = 2
 theme_override_constants/margin_left = 145
 theme_override_constants/margin_top = 80
 theme_override_constants/margin_right = 150
 theme_override_constants/margin_bottom = 370
 
 [node name="BackPanel" type="Panel" parent="Resize/Cassette/UI" unique_id=2062002846]
+self_modulate = Color(0, 0, 0, 1)
 layout_mode = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_o6xl0")
 
 [node name="MarginContainer" type="MarginContainer" parent="Resize/Cassette/UI/BackPanel" unique_id=229145622]
 layout_mode = 0
 offset_right = 217.0
 offset_bottom = 63.0
+mouse_filter = 2
 theme_override_constants/margin_left = 2
 theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 2
@@ -199,7 +184,7 @@ theme_override_constants/margin_bottom = 2
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_fonts/font = ExtResource("7_o6xl0")
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 30
 text = "0000000000000000
 "
 vertical_alignment = 1
