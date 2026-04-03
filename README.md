@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="" alt="Rewind Box Logo" width="120" />
+<img src="https://github.com/Lord0Sanz/REWIND-BOX/blob/main/rewindboxlogo.png" alt="Rewind Box Logo" width="120" />
 
 # Rewind Box
 
@@ -13,8 +13,7 @@ spinning reels, an LCD display, and full theme support.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-black?style=flat-square)](LICENSE)
 [![Godot 4](https://img.shields.io/badge/Godot-4.x-blue?style=flat-square&logo=godotengine&logoColor=white)](https://godotengine.org)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-555?style=flat-square)]()
-[![Issues](https://img.shields.io/github/issues/Lord0Sanz/RewindBox?style=flat-square)](https://github.com/Lord0Sanz/RewindBox/issues)
+[![Platform](https://img.shields.io/badge/%20%7C%20Platform%20%7C%20Windows%20%7C%20Linux%20%7C%20-555?style=flat-square)]()
 
 </div>
 
@@ -132,7 +131,7 @@ RewindBox/
 │   ├── btn_vol_up_bg.png      btn_vol_up_icon.png
 │   ├── btn_vol_down_bg.png    btn_vol_down_icon.png
 │   └── theme.json
-└── playlist/
+└── /...
 ```
 
 ---
